@@ -60,9 +60,9 @@ yarn add --dev @render-with/backstage
 
 This library has the following `peerDependencies`:
 
-![npm peer dependency version](https://img.shields.io/npm/dependency-version/@render-with/backstage/peer/@backstage/core-app-api)
-![npm peer dependency version](https://img.shields.io/npm/dependency-version/@render-with/backstage/peer/@backstage/core-plugin-api)
-![npm peer dependency version](https://img.shields.io/npm/dependency-version/@render-with/backstage/peer/@backstage/test-utils)
+![npm peer dependency version](https://img.shields.io/npm/dependency-version/@render-with/backstage/peer/@backstage/core-app-api)<br />
+![npm peer dependency version](https://img.shields.io/npm/dependency-version/@render-with/backstage/peer/@backstage/core-plugin-api)<br />
+![npm peer dependency version](https://img.shields.io/npm/dependency-version/@render-with/backstage/peer/@backstage/test-utils)<br />
 
 and supports the following `node` versions:
 
