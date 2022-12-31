@@ -6,7 +6,10 @@
 ![NPM](https://img.shields.io/npm/l/@render-with/backstage)
 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-bright%20green)
 
-Use the `withApis(..)` decorator if your component under test requires a [Backstage](https://backstage.io/docs/overview/what-is-backstage) `ApiProvider`:
+Use one of these decorators if your component under test requires a [Backstage](https://backstage.io/docs/overview/what-is-backstage) an app context or an `ApiProvider`:
+
+- `withApp()`
+- `withApis(..)`
 
 Example:
 
@@ -97,7 +100,7 @@ it('fetches data', () => {
 
 ### Need to provide certain API implementations?
 
-If your component under test requires certain API implementations to function, use the `withApis(..)` decorators:
+If your component under test requires certain API implementations to function, use the `withApis(..)` decorator:
 
 ```jsx
 import { render, screen, withApis } from './test-utils'
@@ -114,9 +117,28 @@ it('fetches data', () => {
 })
 ```
 
+### Need to provide an app context?
+
+If your component under test requires a Backstage app context, use the `withApp()` decorator:
+
+```jsx
+import { render, screen, withApp } from './test-utils'
+
+it('fetches data', () => {
+  render(<Plugin />, withApp())
+  expect(screen.getByRole('button', { name: /submit/i })).toBeDisabled()
+})
+```
+
 ## API
 
 _Note: This API reference uses simplified types. You can find the full type specification [here](https://github.com/cultivate-software/render-with-backstage/blob/main/types/index.d.ts)._
+
+```
+function withApp(): Decorator
+```
+
+Wraps component under test in a Backstage `AppContext.Provider`.
 
 ```
 function withApis(apis: ApiHolder): Decorator
