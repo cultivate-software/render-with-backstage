@@ -37,7 +37,6 @@ If you provide a solution to any issue don't forget to mention yourself as a con
 In your pull request on GitHub just write a new comment with ```@all-contributors add <your GitHub handle e.g. davidbieder> <the emoji name/s that fits you contribution>``` (multiple contribution keys need to be separated by comma).
 The Emoji Key (and Contribution Types) can be found [here](https://allcontributors.org/docs/en/emoji-key).
 
-
 ### Update Typings
 
 If your PR introduced some changes in the API, you are more than welcome to modify the TypeScript type definition to reflect those changes. Just modify the `/types/index.d.ts` file accordingly. If you have never seen TypeScript definitions before, you can read more about it in it [documentation pages](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).
