@@ -57,9 +57,7 @@
   "peerDependencies": {
     "@backstage/core-app-api": ">=1.0.4 < 1.1",
     "@backstage/core-plugin-api": ">=1.0.4 < 1.0.6",
-    "@backstage/test-utils": ">=1.1.2 < 2"
-  },
-  "dependencies": {
+    "@backstage/test-utils": ">=1.1.2 < 2",
     "@render-with/decorators": "^1.0.6"
   },
   "devDependencies": {
@@ -68,6 +66,10 @@
     "@babel/node": "7.20.7",
     "@babel/preset-env": "7.20.2",
     "@babel/preset-react": "7.18.6",
+    "@backstage/core-app-api": "1.0.5",
+    "@backstage/core-plugin-api": "1.0.5",
+    "@backstage/test-utils": "1.2.5",
+    "@render-with/decorators": "1.1.1",
     "@semantic-release/git": "10.0.1",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "12.1.5",
