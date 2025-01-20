@@ -65,7 +65,7 @@
     "@babel/core": "7.22.10",
     "@babel/node": "7.22.10",
     "@babel/preset-env": "7.22.10",
-    "@babel/preset-react": "7.22.5",
+    "@babel/preset-react": "7.26.3",
     "@backstage/core-app-api": "1.15.4",
     "@backstage/core-plugin-api": "1.5.3",
     "@backstage/test-utils": "1.4.1",
